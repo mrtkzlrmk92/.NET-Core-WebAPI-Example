@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Etrade.Entities.Models.Entities.Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Eticaret Sitesi Demo</h1>
+<p class="col-md-8 fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero laborum illo suscipit rem voluptatum voluptate. Perferendis, exercitationem architecto quae eveniet molestiae hic quos cupiditate libero, dolorum quam voluptatum suscipit vel.</p>
+<div class="row row-cols-1-row- cols-md-3 g-4">
+    @foreach (var product in Model)
+    {
+        <div class="col">
+            <div class="card-group">
+                <div class="card h-100">
+                    <img src="img/camera.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a asp-action="Details" asp-route-id="@product.Id">
+                                @product.Name
+                                </a>
+                           
+                            </h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">@product.Price.ToString("c")</small>
+                        <a asp-action="Details" asp-route-id="@product.Id">
+                            Product Detail
+                        </a>
+                    </div>
+                </div> @*card bitiş*@
+               
+            </div>
+        </div>
+    }
+</div>

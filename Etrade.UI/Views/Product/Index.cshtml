@@ -1,0 +1,46 @@
+﻿@using Etrade.Entities.Models.Entities
+@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<p>
+    @*Html Tag Helper*@
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            @*Html Helper*@
+            <th>@Html.DisplayNameFor(m=>m.Id)</th>
+            <th>@Html.DisplayNameFor(m=>m.Name)</th>
+            <th>
+                Category Name
+               @* @Html.DisplayNameFor(m=>m.CategoryId)*@
+            </th>
+            <th>@Html.DisplayNameFor(m=>m.Stock)</th>
+            <th>@Html.DisplayNameFor(m=>m.Price)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+                <tr>
+                    <td>@Html.DisplayFor(m=>item.Id)</td>
+                    <td>@Html.DisplayFor(m=>item.Name)</td>
+                    <td>@Html.DisplayFor(m=>item.Category.Name)</td>
+                    <td>@Html.DisplayFor(m=>item.Stock)</td>
+                    <td>@Html.DisplayFor(m=>item.Price)</td>
+                    <td>
+                        <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                        <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+        }
+
+
+    </tbody>
+</table>

@@ -1,0 +1,29 @@
+﻿@using Etrade.Entities.Models.Identity
+@model IEnumerable<Role>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<hr />
+<a asp-action="Create">Role Ekle</a>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Adı</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model)
+        {
+            <tr>
+                <td>@role.Name</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@role.Id" class="btn btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@role.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

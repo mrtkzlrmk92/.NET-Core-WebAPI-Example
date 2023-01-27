@@ -1,0 +1,40 @@
+﻿@model Etrade.Entities.Models.ViewModel.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+<hr />
+<form method="post">
+    <div class="row">
+        <div class="col-md-3">
+            @Html.LabelFor(m=>m.UsernameOrEmail)
+        </div>
+        <div class="col-md-9">
+            @*@Html.EditorFor(m=>m.UsernameOrEmail)*@
+            <input asp-for="UsernameOrEmail" type="text" placeholder="Username Or Email" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            @Html.LabelFor(m=>m.Password)
+        </div>
+        <div class="col-md-9">
+            @Html.EditorFor(m=>m.Password)
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3">
+            @Html.LabelFor(m=>m.RememberMe)
+        </div>
+        <div class="col-md-9">
+            @Html.CheckBoxFor(m=>m.RememberMe)
+        </div>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+    </div>
+</form>
+

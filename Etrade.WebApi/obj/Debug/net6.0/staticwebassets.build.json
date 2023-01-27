@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QTOz7f81C0xk8SaZtdo/FFAhZLrpEs2wGAOsgAMmvOo=",
+  "Source": "Etrade.WebApi",
+  "BasePath": "_content/Etrade.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

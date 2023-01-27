@@ -1,0 +1,45 @@
+﻿@model Etrade.Entities.Models.Entities.Product
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div>
+                <label asp-for="@Model.Name" class="form-label"></label>
+                <input asp-for="@Model.Name" class="form-control" />
+                <span asp-validation-for="@Model.Name" class="text-danger"></span>
+            </div>
+            <div>
+                <label class="form-label">Category Name</label>
+                <select asp-for="CategoryId" asp-items="ViewBag.CategoryList" class="form-control"></select>
+                <span asp-validation-for="@Model.Category.Name" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="@Model.Stock" class="form-label"></label>
+                <input asp-for="@Model.Stock" class="form-control" />
+                <span asp-validation-for="@Model.Stock" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="@Model.Price" class="form-label"></label>
+                <input asp-for="@Model.Price" class="form-control" />
+                <span asp-validation-for="@Model.Price" class="text-danger"></span>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Edit</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Listeye Git</a>
+</div>
+
+@section Scripts{
+    @{
+        Html.RenderPartial("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,14 @@
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\bin\Debug\net6.0\Etrade.Entities.deps.json
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\bin\Debug\net6.0\Etrade.Entities.runtimeconfig.json
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\bin\Debug\net6.0\Etrade.Entities.dll
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\bin\Debug\net6.0\Etrade.Entities.pdb
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\obj\Debug\net6.0\Etrade.Entities.csproj.AssemblyReference.cache
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\obj\Debug\net6.0\Etrade.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\obj\Debug\net6.0\Etrade.Entities.AssemblyInfoInputs.cache
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\obj\Debug\net6.0\Etrade.Entities.AssemblyInfo.cs
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\obj\Debug\net6.0\Etrade.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\obj\Debug\net6.0\Etrade.Entities.dll
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\obj\Debug\net6.0\refint\Etrade.Entities.dll
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\obj\Debug\net6.0\Etrade.Entities.pdb
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\obj\Debug\net6.0\Etrade.Entities.genruntimeconfig.cache
+C:\Users\ibrahim.kaya\source\repos\Erp301\Etrade.Entities\obj\Debug\net6.0\ref\Etrade.Entities.dll

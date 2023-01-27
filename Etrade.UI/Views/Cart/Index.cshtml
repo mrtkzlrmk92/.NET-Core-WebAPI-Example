@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Etrade.Entities.Models.ViewModel.CartItem>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Sepet</h1>
+<hr />
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Quantity</th>
+            <th>Product Total</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>@item.Product.Price</td>
+                <td>@item.Quantity</td>
+                <td>@((item.Product.Price*item.Quantity).ToString("c"))</td>
+                <td>
+                    <a class="btn btn-danger" asp-action="Remove" asp-route-id="@item.Product.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"></td>
+            <td>@ViewBag.Total</td>
+        </tr>
+    </tfoot>
+</table>
+
